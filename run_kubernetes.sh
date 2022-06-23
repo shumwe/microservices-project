@@ -9,12 +9,7 @@ dockerpath="shumwe/predictorapi"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run predictorapipod \
-    --image=$dockerpath \
-    --port=80 \
-    --labels app=predictorapipod
-    --generator=run-pod/v1
-
+kubectl run predictorapipod --image=$dockerpath --port=80 --labels app=predictorapipod
 
 # Step 3:
 # List kubernetes pods
