@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build --tag=predictorapi
+docker build --tag=predictorapi .
 
 # Step 2: 
 # List docker images
